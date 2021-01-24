@@ -23,5 +23,13 @@ Counter.propTypes = {
 const mapStateToProps = state => ({
   counter: state.counter
 });
- 
+
+/*
+
+connect(state, {actions})(component)
+
+you map the state and actions to props. 
+
+*/
+
 export default connect(mapStateToProps, {increment, decrement})(Counter);
